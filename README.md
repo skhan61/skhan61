@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @skhan61
+- 👋 Hi, I’m Sayem Khan
 - 👀 I'm interested in Machine Learning-based Quantitative Trading Strategy research and development.
 - 🌱 I’m currently a Ph.D. Student.
 - 💞️ I want to collaborate on applying Data Science and ML in finance and risk management.
