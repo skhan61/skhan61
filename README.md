@@ -1,13 +1,15 @@
+- I'm Sayem Khan.
+- Agentic AI Engineer and ML Researcher with dual M.S. degrees in Computer Science and Mathematics.
+- I build production-grade multi-agent systems that automate real workflows end-to-end. My recent projects include Orchestra (autonomous research agents) and AutoDokan (24/7 live commerce automation with 20+ coordinated subagents).
+- Currently a Volunteer Research Engineer at RoCAL (Robotic Collaboration and Autonomy Lab), Rochester Institute of Technology, working on robotic perception and autonomy.
+- I work daily with Claude Code, Cursor, the Anthropic SDK, and LLM APIs for rapid prototyping and development.
+- Tech stack: Python, Go, PyTorch, Claude API, MCP, gRPC, PostgreSQL, Docker, OAuth 2.0, RBAC.
+- Previously: Graduate Teaching Assistant (CS, SUNY Buffalo), Graduate Teaching Fellow (Math, UMass Dartmouth), Research Assistant (Chester F. Carlson Center for Imaging Science, RIT).
+- Published in Journal of Geophysical Research: Biogeosciences and AGU Fall Meeting proceedings.
+- Open to collaborations in agentic AI, ML research, and full-stack engineering.
+- Reach me at sayem.eee.kuet@gmail.com.
 
-- 👋 Hey there! I'm Sayem Khan.
-- 🔧 I live at the exciting crossroads of AI and software engineering, where I tinker with algorithms and code to create smarter systems that do amazing things.
-- 🎓 I've spent quite some time in academia, earning Master's degrees in Computer Science and Mathematics. It's been a wild ride that's armed me with a toolbox full of analytical and tech skills, ready to tackle the next big challenge.
-- 💭 I'm all about dreaming up and building AI-powered software. It's kind of my thing – turning complex problems into streamlined, intelligent solutions that work smarter, not harder.
-- 📊 The world of machine learning and finance is my playground. I love diving into data, teasing out patterns, and designing strategies that might be the next big thing in trading.
-- 🚀 Entrepreneurship in tech is where I see the future taking us. I'm looking for opportunities to collaborate on projects that use AI to shake things up, invent something new, and really make a difference.
-- 🌱 I'm always up for a good chat about tech, AI, or anything else that pushes the envelope. I'm here if you're cooking something cool or want to exchange ideas.
-- 📫 You can find me at sayem.eee.kuet@gmail.com. Let's make something extraordinary together!
 <!---
-skhan61/skhan61 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+skhan61/skhan61 is a special repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
