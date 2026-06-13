@@ -4,10 +4,11 @@
 
 </div>
 
-- I'm the computer guy in a laser physics lab, building ML systems that augment researchers developing cutting-edge materials.
-- I bring AI into the lab: optimization, automation, and ML pipelines for the people running the experiments.
 - Digital Technologies Lead at AlchLight LLC.
-- Contact: sayem.eee.kuet@gmail.com (personal) · s.khan@alchlight.com (office)
+- Machine learning and AI engineer working in a laser physics R&D lab, supporting researchers who develop advanced materials.
+- I design and build optimization, automation, and data systems, applying Bayesian optimization and machine learning to materials research.
+- Dual M.S. in Computer Science and Mathematics; background in agentic AI and multi-agent systems.
+- Contact: sayem.eee.kuet@gmail.com (personal), s.khan@alchlight.com (office)
 
 <div align="center">
 
