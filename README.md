@@ -17,6 +17,12 @@
 
 </div>
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/autonomous-agent-loop.svg" alt="Autonomous agent loop" width="100%"/>
+
+</div>
+
 <!--- previous bio (commented out)
 - I'm Sayem Khan.
 - Agentic AI Engineer and ML Researcher with dual M.S. degrees in Computer Science and Mathematics.
