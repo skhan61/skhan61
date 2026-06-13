@@ -10,7 +10,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/two-loop-optimization.svg" alt="Generalized scheme of my machines" width="100%"/>
+<img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/two-loop-optimization.svg" alt="Generalized schematic diagram of my machines" width="100%"/>
 
 </div>
 
