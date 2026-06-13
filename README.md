@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/banner.svg" alt="Sayem Khan" width="100%"/>
 
-<img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/typing.svg" alt="Agentic AI Engineer · ML Researcher · Multi-Agent Systems Builder"/>
+<a href="https://guo369.wixsite.com/alchlight-1"><img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/typing.svg" alt="I'm a computer guy in a laser physics lab, building ML systems that augment researchers developing cutting-edge materials (click for AlchLight)"/></a>
 
 </div>
 

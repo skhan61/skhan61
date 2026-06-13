@@ -1,0 +1,3 @@
+.buildvenv/
+.build_svgs.py
+preview.html
