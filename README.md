@@ -6,7 +6,7 @@
 
 - I'm the computer guy in a laser physics lab, building ML systems that augment researchers developing cutting-edge materials.
 - I bring AI into the lab: optimization, automation, and ML pipelines for the people running the experiments.
-- Contact: sayem.eee.kuet@gmail.com (personal) · sk7467@rit.edu (office)
+- Contact: sayem.eee.kuet@gmail.com (personal) · s.khan@alchlight.com (office)
 
 <div align="center">
 
