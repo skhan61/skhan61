@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/banner.svg" alt="Sayem Khan" width="100%"/>
-
-<a href="https://guo369.wixsite.com/alchlight-1"><img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/typing.svg" alt="I'm a 'computer guy!' in a laser physics lab (click for AlchLight)"/></a>
+<a href="https://guo369.wixsite.com/alchlight-1"><img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/banner.svg" alt="SAYEM KHAN, Agentic AI Engineer / ML Researcher / Builder. Computer Guy in a laser physics R&D lab (click for AlchLight)" width="100%"/></a>
 
 </div>
 
