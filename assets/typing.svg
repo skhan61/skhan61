@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="70" viewBox="0 0 560 70" fill="none" role="img" aria-label="Agentic AI Engineer, ML Researcher, Multi-Agent Systems Builder">
+  <defs>
+    <linearGradient id="roleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <clipPath id="clip0"><rect x="14" y="14" width="0" height="44">
+      <animate attributeName="width" values="0;342;342" keyTimes="0;0.111;1" dur="9s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="clip1"><rect x="14" y="14" width="0" height="44">
+      <animate attributeName="width" values="0;0;234;234" keyTimes="0;0.333;0.444;1" dur="9s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="clip2"><rect x="14" y="14" width="0" height="44">
+      <animate attributeName="width" values="0;0;486;486" keyTimes="0;0.666;0.778;1" dur="9s" repeatCount="indefinite"/>
+    </rect></clipPath>
+  </defs>
+
+  <rect x="0" y="0" width="560" height="70" rx="12" fill="#0d1117"/>
+
+  <g font-family="ui-monospace, 'SFMono-Regular', 'Courier New', monospace" font-size="30" font-weight="700" fill="url(#roleGrad)">
+    <g clip-path="url(#clip0)">
+      <text x="14" y="46">Agentic AI Engineer</text>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.333;0.334;1" dur="9s" repeatCount="indefinite"/>
+    </g>
+    <g clip-path="url(#clip1)" opacity="0">
+      <text x="14" y="46">ML Researcher</text>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.333;0.334;0.666;0.667;1" dur="9s" repeatCount="indefinite"/>
+    </g>
+    <g clip-path="url(#clip2)" opacity="0">
+      <text x="14" y="46">Multi-Agent Systems Builder</text>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.666;0.667;1" dur="9s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <rect y="16" width="3" height="40" fill="#22d3ee">
+    <animate attributeName="x"
+      values="14;356;356;14;248;248;14;500;500"
+      keyTimes="0;0.111;0.333;0.334;0.444;0.666;0.667;0.778;1"
+      dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="0.8s" repeatCount="indefinite"/>
+  </rect>
+</svg>

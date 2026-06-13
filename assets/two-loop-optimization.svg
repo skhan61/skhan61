@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="380" viewBox="0 0 820 380" fill="none" role="img" aria-label="Two-loop bilevel optimization in ML training: outer optimizer loop and inner training loop">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#131a26"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="ringOuter" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="ringInner" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <marker id="aR" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#22d3ee"/>
+    </marker>
+    <marker id="aL" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="380" rx="16" fill="url(#bgGrad)"/>
+  <text x="410" y="42" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="26" font-weight="800" fill="url(#titleGrad)">Two-Loop Optimization</text>
+
+  <path id="outer" d="M 215,110 a 95,95 0 1,0 0,190 a 95,95 0 1,0 0,-190"
+        stroke="url(#ringOuter)" stroke-width="2.5" stroke-opacity="0.55" stroke-dasharray="3 7"/>
+  <g font-family="ui-monospace, monospace" font-size="13">
+    <g><rect x="170" y="98" width="90" height="22" rx="11" fill="#1e293b"/><text x="215" y="113" text-anchor="middle" fill="#e2e8f0">propose θ</text></g>
+    <g><rect x="246" y="258" width="74" height="22" rx="11" fill="#1e293b"/><text x="283" y="273" text-anchor="middle" fill="#e2e8f0">evaluate</text></g>
+    <g><rect x="86"  y="258" width="126" height="22" rx="11" fill="#1e293b"/><text x="149" y="273" text-anchor="middle" fill="#e2e8f0">update surrogate</text></g>
+  </g>
+  <circle r="6" fill="#22d3ee"><animateMotion dur="4s" repeatCount="indefinite" rotate="auto"><mpath href="#outer"/></animateMotion></circle>
+  <circle r="5" fill="#6366f1" opacity="0.7"><animateMotion dur="4s" begin="1.33s" repeatCount="indefinite"><mpath href="#outer"/></animateMotion></circle>
+  <circle r="4" fill="#a78bfa" opacity="0.6"><animateMotion dur="4s" begin="2.66s" repeatCount="indefinite"><mpath href="#outer"/></animateMotion></circle>
+
+  <path id="inner" d="M 605,133 a 72,72 0 1,1 0,144 a 72,72 0 1,1 0,-144"
+        stroke="url(#ringInner)" stroke-width="2.5" stroke-opacity="0.6" stroke-dasharray="3 7"/>
+  <g font-family="ui-monospace, monospace" font-size="13">
+    <g><rect x="567" y="120" width="76" height="22" rx="11" fill="#1e293b"/><text x="605" y="135" text-anchor="middle" fill="#e2e8f0">forward</text></g>
+    <g><rect x="636" y="246" width="56" height="22" rx="11" fill="#1e293b"/><text x="664" y="261" text-anchor="middle" fill="#e2e8f0">loss</text></g>
+    <g><rect x="508" y="246" width="112" height="22" rx="11" fill="#1e293b"/><text x="564" y="261" text-anchor="middle" fill="#e2e8f0">backprop · step</text></g>
+  </g>
+  <circle r="6" fill="#a78bfa"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#inner"/></animateMotion></circle>
+  <circle r="5" fill="#22d3ee" opacity="0.7"><animateMotion dur="2s" begin="0.66s" repeatCount="indefinite"><mpath href="#inner"/></animateMotion></circle>
+  <circle r="4" fill="#6366f1" opacity="0.6"><animateMotion dur="2s" begin="1.33s" repeatCount="indefinite"><mpath href="#inner"/></animateMotion></circle>
+
+  <path id="toInner" d="M 312 178 L 528 178" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.45" marker-end="url(#aR)"/>
+  <g font-family="ui-monospace, monospace" font-size="12.5">
+    <rect x="350" y="158" width="140" height="20" rx="10" fill="#1e293b"/>
+    <text x="420" y="172" text-anchor="middle" fill="#cbd5e1">θ · hyperparameters</text>
+  </g>
+  <circle r="4.5" fill="#22d3ee"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#toInner"/></animateMotion></circle>
+
+  <path id="toOuter" d="M 528 232 L 312 232" stroke="#a78bfa" stroke-width="2" stroke-opacity="0.45" marker-end="url(#aL)"/>
+  <g font-family="ui-monospace, monospace" font-size="12.5">
+    <rect x="355" y="234" width="130" height="20" rx="10" fill="#1e293b"/>
+    <text x="420" y="248" text-anchor="middle" fill="#cbd5e1">validation loss</text>
+  </g>
+  <circle r="4.5" fill="#a78bfa"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#toOuter"/></animateMotion></circle>
+
+  <g text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif">
+    <text x="215" y="344" font-size="14" font-weight="700" fill="#9fb0cc">OUTER LOOP</text>
+    <text x="215" y="364" font-size="12" font-family="ui-monospace, monospace" fill="#64748b">optimizer · search over θ</text>
+    <text x="605" y="344" font-size="14" font-weight="700" fill="#9fb0cc">INNER LOOP</text>
+    <text x="605" y="364" font-size="12" font-family="ui-monospace, monospace" fill="#64748b">train weights · gradient steps</text>
+  </g>
+</svg>
