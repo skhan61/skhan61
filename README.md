@@ -5,10 +5,10 @@
 </div>
 
 - Digital Technologies Lead at AlchLight LLC.
-- Machine learning and AI engineer working in a laser physics R&D lab, supporting researchers who develop advanced materials.
-    - I design and build optimization, automation, and data systems, applying machine learning to materials research.
-    - AI engineer building agentic AI and autonomous research agents that automate the research process itself, how scientists reason about, plan, and run experiments, not just the computation behind them.
-- I have some degrees in Computer Science, Computational Science, Mathematics, and Electrical Engineering.
+- Machine learning and AI engineer in a laser physics R&D lab, supporting researchers who develop advanced materials.
+    - I design and build the optimization, automation, and machine-learning systems behind their research.
+    - I build agentic AI and autonomous research agents that automate the research process itself, not just the computation: the way scientists reason, plan, and run experiments.
+- I hold degrees in Computer Science, Computational Science, Mathematics, and Electrical Engineering.
 - Contact: sayem.eee.kuet@gmail.com (personal), s.khan@alchlight.com (office)
 
 <div align="center">
