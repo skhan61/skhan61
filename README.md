@@ -19,7 +19,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/autonomous-agent-loop.svg" alt="Human-in-the-loop agent loop" width="100%"/>
+<img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/autonomous-agent-loop.svg?v=2" alt="Human-in-the-loop agent loop" width="100%"/>
 
 </div>
 
