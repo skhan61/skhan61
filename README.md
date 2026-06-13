@@ -2,10 +2,21 @@
 
 <img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/banner.svg" alt="Sayem Khan" width="100%"/>
 
-<a href="https://guo369.wixsite.com/alchlight-1"><img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/typing.svg" alt="I'm a computer guy in a laser physics lab, building ML systems that augment researchers developing cutting-edge materials (click for AlchLight)"/></a>
+<a href="https://guo369.wixsite.com/alchlight-1"><img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/typing.svg" alt="I'm a 'computer guy!' in a laser physics lab (click for AlchLight)"/></a>
 
 </div>
 
+- I'm the computer guy in a laser physics lab, building ML systems that augment researchers developing cutting-edge materials.
+- I bring AI into the lab: optimization, automation, and ML pipelines for the people running the experiments.
+- Contact: sayem.eee.kuet@gmail.com (personal) · sk7467@rit.edu (office)
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/two-loop-optimization.svg" alt="How my typical machine looks like" width="100%"/>
+
+</div>
+
+<!--- previous bio (commented out)
 - I'm Sayem Khan.
 - Agentic AI Engineer and ML Researcher with dual M.S. degrees in Computer Science and Mathematics.
 - I build production-grade multi-agent systems that automate real workflows end-to-end. My recent projects include Orchestra (autonomous research agents) and AutoDokan (24/7 live commerce automation with 20+ coordinated subagents).
@@ -16,24 +27,7 @@
 - Published in Journal of Geophysical Research: Biogeosciences and AGU Fall Meeting proceedings.
 - Open to collaborations in agentic AI, ML research, and full-stack engineering.
 - Reach me at sayem.eee.kuet@gmail.com
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/skhan61/skhan61/master/assets/two-loop-optimization.svg" alt="Two-loop (bilevel) optimization in ML training" width="100%"/>
-
-</div>
-
-<!---
-- I'm Sayem Khan.
-- Agentic AI Engineer and ML Researcher with dual M.S. degrees in Computer Science and Mathematics.
-- I build production-grade multi-agent systems that automate real workflows end-to-end. My recent projects include Orchestra (autonomous research agents) and AutoDokan (24/7 live commerce automation with 20+ coordinated subagents).
-- Currently a Volunteer Research Engineer at RoCAL (Robotic Collaboration and Autonomy Lab), Rochester Institute of Technology, working on robotic perception and autonomy.
-- I work daily with Claude Code, Cursor, the Anthropic SDK, and LLM APIs for rapid prototyping and development.
-- Tech stack: Python, Go, PyTorch, Claude API, MCP, gRPC, PostgreSQL, Docker, OAuth 2.0, RBAC.
-- Previously: Graduate Teaching Assistant (CS, SUNY Buffalo), Graduate Teaching Fellow (Math, UMass Dartmouth), Research Assistant (Chester F. Carlson Center for Imaging Science, RIT).
-- Published in Journal of Geophysical Research: Biogeosciences and AGU Fall Meeting proceedings.
-- Open to collaborations in agentic AI, ML research, and full-stack engineering.
-- Reach me at sayem.eee.kuet@gmail.com.
+--->
 
 <!---
 skhan61/skhan61 is a special repository because its `README.md` (this file) appears on your GitHub profile.
