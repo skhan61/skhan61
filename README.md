@@ -4,7 +4,6 @@
 
 </div>
 
-- ML Lead at AlchLight, forward-deployed in a laser-physics lab.
 - Digital Technologies Lead at AlchLight LLC.
 - Machine learning and AI engineer in a laser physics R&D lab, supporting researchers who develop advanced materials.
     - I design and build the optimization, automation, and machine-learning systems behind their research.
