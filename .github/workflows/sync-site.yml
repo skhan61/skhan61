@@ -45,6 +45,13 @@ jobs:
           if front is None:
               raise SystemExit(f"{target}: no front matter")
           text: str = re.sub(r"<!--.*?-->", "", source.read_text(encoding="utf-8"), flags=re.DOTALL)
+          # A centered div holding one image (or one linked image) becomes a centered paragraph,
+          # so the theme gives it normal paragraph spacing. Any other div stays as written.
+          text = re.sub(
+              r'<div align="center">\s*((?:<a [^>]*>)?<img [^>]*/?>(?:</a>)?)\s*</div>',
+              r'\n\n<p align="center">\1</p>\n\n',
+              text,
+          )
           text = re.sub(r"\n{3,}", "\n\n", text).strip() + "\n"
           # raw: the README is shown as written, never run as Liquid.
           target.write_text(front.group(0) + "\n{% raw %}\n" + text + "{% endraw %}\n", encoding="utf-8")
