@@ -1,5 +1,5 @@
 # Copy this README, without its HTML comments, into the About page of
-# https://skhan61.github.io (repo skhan61/skhan61.github.io, file _includes/about.md).
+# https://skhan61.github.io (repo skhan61/skhan61.github.io, file _tabs/about.md, front matter kept).
 name: sync site
 
 on:
@@ -34,22 +34,25 @@ jobs:
           ssh-key: ${{ secrets.SITE_DEPLOY_KEY }}
       - name: README without comments, as the About page
         run: |
-          python3 -I - profile/README.md site/_includes/about.md <<'PY'
+          python3 -I - profile/README.md site/_tabs/about.md <<'PY'
           import re
           import sys
           from pathlib import Path
 
           source: Path = Path(sys.argv[1])
           target: Path = Path(sys.argv[2])
+          front: re.Match[str] | None = re.match(r"---\n.*?\n---\n", target.read_text(encoding="utf-8"), flags=re.DOTALL)
+          if front is None:
+              raise SystemExit(f"{target}: no front matter")
           text: str = re.sub(r"<!--.*?-->", "", source.read_text(encoding="utf-8"), flags=re.DOTALL)
           text = re.sub(r"\n{3,}", "\n\n", text).strip() + "\n"
           # raw: the README is shown as written, never run as Liquid.
-          target.write_text("{% raw %}\n" + text + "{% endraw %}\n", encoding="utf-8")
+          target.write_text(front.group(0) + "\n{% raw %}\n" + text + "{% endraw %}\n", encoding="utf-8")
           PY
       - name: Commit and push, if it changed
         working-directory: site
         run: |
-          git add _includes/about.md
+          git add _tabs/about.md
           if git diff --cached --quiet; then echo "About page already current"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
