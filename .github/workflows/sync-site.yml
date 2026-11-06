@@ -1,0 +1,57 @@
+# Copy this README, without its HTML comments, into the About page of
+# https://skhan61.github.io (repo skhan61/skhan61.github.io, file _includes/about.md).
+name: sync site
+
+on:
+  push:
+    branches: [master]
+    paths: ["README.md", ".github/workflows/sync-site.yml"]
+  workflow_dispatch:
+
+concurrency:
+  group: sync-site
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  about:
+    name: update the About page
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: profile
+          persist-credentials: false
+      # SITE_DEPLOY_KEY: a deploy key with write access to skhan61.github.io only.
+      - uses: actions/checkout@v5
+        with:
+          repository: skhan61/skhan61.github.io
+          ref: main
+          path: site
+          ssh-key: ${{ secrets.SITE_DEPLOY_KEY }}
+      - name: README without comments, as the About page
+        run: |
+          python3 -I - profile/README.md site/_includes/about.md <<'PY'
+          import re
+          import sys
+          from pathlib import Path
+
+          source: Path = Path(sys.argv[1])
+          target: Path = Path(sys.argv[2])
+          text: str = re.sub(r"<!--.*?-->", "", source.read_text(encoding="utf-8"), flags=re.DOTALL)
+          text = re.sub(r"\n{3,}", "\n\n", text).strip() + "\n"
+          # raw: the README is shown as written, never run as Liquid.
+          target.write_text("{% raw %}\n" + text + "{% endraw %}\n", encoding="utf-8")
+          PY
+      - name: Commit and push, if it changed
+        working-directory: site
+        run: |
+          git add _includes/about.md
+          if git diff --cached --quiet; then echo "About page already current"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "About: from skhan61/skhan61@${GITHUB_SHA:0:7}"
+          git push origin HEAD:main
