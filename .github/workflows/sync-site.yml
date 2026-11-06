@@ -1,5 +1,5 @@
 # Copy this README, without its HTML comments, into the About page of
-# https://skhan61.github.io (repo skhan61/skhan61.github.io, file about.md, front matter kept).
+# https://skhan61.github.io (repo skhan61/skhan61.github.io, file index.md, the front page, front matter kept).
 name: sync site
 
 on:
@@ -34,7 +34,7 @@ jobs:
           ssh-key: ${{ secrets.SITE_DEPLOY_KEY }}
       - name: README without comments, as the About page
         run: |
-          python3 -I - profile/README.md site/about.md <<'PY'
+          python3 -I - profile/README.md site/index.md <<'PY'
           import re
           import sys
           from pathlib import Path
@@ -52,7 +52,7 @@ jobs:
       - name: Commit and push, if it changed
         working-directory: site
         run: |
-          git add about.md
+          git add index.md
           if git diff --cached --quiet; then echo "About page already current"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
